@@ -1,0 +1,130 @@
+/* Hii ni kwa Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: var(--yellow-theme-nav-background-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    height: 70px;
+    box-sizing: border-box;
+}
+
+.navbar__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+}
+
+.navbar__container__logo {
+    color: var(--yellow-theme-main-color);
+    font-size: 1.8rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Navbar Menu */
+.navbar__container__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar__container__menu__links {
+    text-decoration: none;
+    color: var(--yellow-theme-sub-text-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    white-space: nowrap;
+    padding: 0.75rem 1.25rem;
+    line-height: 1.5;
+    position: relative;
+    display: inline-block;
+
+    &:hover {
+        color: var(--yellow-theme-main-color);
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -2px;
+        transform: translateX(-50%);
+        height: 2px;
+        width: 0;
+        background-color: var(--yellow-theme-main-color);
+        transition: width 0.3s ease;
+    }
+
+    &:hover::after {
+        width: 100%;
+    }
+}
+
+/* Mobile Menu Icon */
+.nav-icon {
+    display: none;
+    cursor: pointer;
+    color: var(--yellow-theme-main-color);
+    font-size: 1.8rem;
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    .bar{
+        width: 25px;
+        height: 3px;
+        background-color: var(--yellow-theme-main-color);
+        transition: all .3s ease-in-out;
+    }
+}
+
+/* Mobile Menu Styles */
+@media only screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .navbar__container__menu {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+        display: none;
+    }
+
+    .navbar__container__menu.active {
+        display: flex;
+    }
+
+    .navbar__container__menu__links {
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0;
+        border-bottom: 1px solid var(--yellow-theme-main-color);
+        font-size: 1.1rem;
+    }
+    .nav-icon{
+        display: flex;
+    }
+}
+
+body {
+    margin-top: 70px;
+}

@@ -1,0 +1,11 @@
+{
+  "presets": [
+    "@babel/preset-env",  // Transpiles modern JavaScript syntax to browser-compatible code
+    "@babel/preset-react"  // Transpiles JSX to JavaScript
+  ],
+  "plugins": [
+    "@babel/plugin-proposal-class-properties",  // Allows the use of class properties
+    "@babel/plugin-transform-runtime"  // Optimize Babel helpers
+  ]
+}
+
