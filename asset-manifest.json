@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Kaijage/static/css/main.b68e02a0.css",
+    "main.js": "/Kaijage/static/js/main.dd00aae1.js",
+    "static/media/ProfCert.png": "/Kaijage/static/media/ProfCert.70731e3c0cf45bc7444f.png",
+    "static/media/04.jpg": "/Kaijage/static/media/04.353c21f5454325c72340.jpg",
+    "static/media/02.jpg": "/Kaijage/static/media/02.d5ad28d42e06686998a4.jpg",
+    "static/media/06.jpeg": "/Kaijage/static/media/06.e96bb081ee7ab280c910.jpeg",
+    "index.html": "/Kaijage/index.html",
+    "main.b68e02a0.css.map": "/Kaijage/static/css/main.b68e02a0.css.map",
+    "main.dd00aae1.js.map": "/Kaijage/static/js/main.dd00aae1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b68e02a0.css",
+    "static/js/main.dd00aae1.js"
+  ]
+}
